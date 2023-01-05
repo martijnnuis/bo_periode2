@@ -1,10 +1,63 @@
-img{
-    width: 700px;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    cursor: none;
+    
 }
+
+header, footer{
+    background: black;
+    color:white;
+    display: block;
+}
+
+header{
+    height: 60px;
+}
+
+article{
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo{
+    width:1000px;
+    height: 500px;
+}
+
+.plaatje{
+    width: 200px ;   
+}
+
+.rechts{
+
+}
+
+footer{
+    height: 200px;
+}
+
+footer > H2{
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+}
+
+footer > p{
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+}
+
+
 
 .score{
     font-size: 4em;
@@ -35,14 +88,6 @@ body{
     bottom: 0;
     animation: rise .3s ease-out;
 }
-@keyframes rise {
-    0%{
-        transform: translateX(-50%) translateY(100%);
-    }
-    100%{
-        transform: translateX(-50%) translateY(0);
-    }
-}
 
 .cursor{
     height: 110px;
@@ -58,4 +103,17 @@ body{
 }
 .cursor.active{
     transform: translate(-30%, -50%);
+}
+
+@keyframes rise {
+    0%{
+        transform: translateX(-50%) translateY(100%);
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

@@ -5,63 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flomar game-museum</title>
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="./css/site.css">
 </head>
 <body>
-    <A href="#het museum in het kort"><h3>het museum in het kort</h3></A>
-    <figure>
-        <h1>Flomar Game-Museum</h1>
-        <img src="./foto's/download.png" alt="logo video game museum">
-        <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus doloribus provident nisi neque iure ducimus laudantium atque sed minima illo placeat reprehenderit sint, suscipit veniam, expedita fugit quae earum nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorem necessitatibus assumenda animi perferendis culpa mollitia. Officiis iusto fugiat excepturi, autem facere modi eaque libero magni assumenda maiores et Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa eligendi alias, cum assumenda debitis nihil quis ipsam nisi tempora nesciunt, eum unde enim? Pariatur ex ea fugit veritatis, in expedita.</article>
-    </figure>
-    <figure>
-        <a name="het museum in het kort"></a>
-        <img src="./foto's/alien.jpg" alt="een alien erop en daarnaast een vitrine kast met oude games">
-        <img src="./foto's/sfeer1.jpg" alt="allerei arcade spellen die te zien zijn">
-        <img src="./foto's/foto2.jpg" alt="mensen die aan het spelen zijn op de arcade kasten">
-        <img src="./foto's/foto3.jpg" alt="een arcade kast met de originele pacman game erop">
+    <header>
+        <nav>
+            <ul>
+                <A href="#het-museum-in-het-kort"><h3>het museum in het kort</h3></A>
+                <A href="#geschiedenis"><h3>geschiedenis</h3></A>
+                <A href="game"><h3>Game</h3></A>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <figure>
+            <h1>Flomar Game-Museum</h1>
+            <img class="logo" src="./foto's/download.png" alt="logo video game museum">
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Temporibus doloribus provident nisi neque iure ducimus laudantium atque sed minima illo placeat reprehenderit sint, 
+            suscipit veniam, expedita fugit quae earum nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ab dolorem necessitatibus assumenda animi perferendis culpa mollitia. Officiis iusto fugiat excepturi,
+            autem facere modi eaque libero magni assumenda maiores et Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. Culpa eligendi alias, cum assumenda debitis nihil quis ipsam nisi tempora nesciunt, 
+            eum unde enim? Pariatur ex ea fugit veritatis, in expedita.
+        </p>
+        <figure>
+            <a id="het-museum-in-het-kort"></a>
+            <img class="plaatje rechts" src="./foto's/alien.jpg" alt="een alien erop en daarnaast een vitrine kast met oude games">
+            <img class="plaatje rechts" src="./foto's/sfeer1.jpg" alt="allerei arcade spellen die te zien zijn">
+            <img class="plaatje rechts" src="./foto's/foto2.jpg" alt="mensen die aan het spelen zijn op de arcade kasten">
+            <img class="plaatje rechts" src="./foto's/foto3.jpg" alt="een arcade kast met de originele pacman game erop">
+        </figure>
         <h2>het museum in het kort</h2>
-        <article>
+        <p>
             In het museum is er van alles te doen, 
             van nieuwe games tot de oudste voor iedereen is er wel wat.
             Wil je de eerste pacman spelen die staat er ook gewoon met daarnaast alle variaties die er op de game zijn uitgekomen.
             Ons museum is ook geschikt voor school uitjes of excursies.
             Voor ouders met kinderfeestjes, de koffie en thee staan klaar in ons cafel.
-        </article>
-    <figure>
-        <h2>geschiedenis</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus perspiciatis rerum error earum voluptate incidunt itaque illo repellendus a non cupiditate unde nihil deleniti, quam est ipsa porro nam. Voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non consequuntur voluptatum dicta eligendi asperiores velit, tempore sint ex. Veniam deleniti eum quaerat quod laborum hic pariatur beatae unde culpa aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum distinctio voluptas vitae illo non, magnam accusamus deleniti, voluptates at corrupti aliquid incidunt sequi nobis eligendi totam hic commodi odit. Lorem ipsum dolor
-        <img src="./foto's/foto1.jpg" alt="foto met een beeldje van een karakter uit metal gear en de game zelf en nog een paar andere props">
-    </figure>
-    <figure onmouseover="document.getElementById('cursor').style.background-imageurl('img/hamer.png')">
-        <h2>de Game</h2>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum nulla libero nobis, quo doloremque labore totam qui quaerat minima pariatur, atque saepe sapiente id sit impedit nemo nisi placeat praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptatum incidunt corrupti voluptate ex minima. Sunt tempore necessitatibus hic, quibusdam, totam ipsa, modi dolor magnam excepturi illum odit? Dignissimos, magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem aperiam vel iure blanditiis autem quasi molestias aspernatur necessitatibus. Quibusdam blanditiis delectus quas ullam suscipit inventore vel temporibus possimus deserunt.
-        <h1 class="score">SCORE: <span>00</span></h1>
-        <div class="board">
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-            <div class="hole"></div>
-        </div>
-        <div class="cursor" id="cursor"></div>
-    
-        <script src="wam.js" defer></script>
-    </figure>
-    <figure>
+        </p>
+            <a id="geschiedenis"></a>
+            <h2>geschiedenis</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Delectus perspiciatis rerum error earum voluptate
+            incidunt itaque illo repellendus a non cupiditate unde nihil deleniti,
+            quam est ipsa porro nam. Voluptates. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Non consequuntur voluptatum dicta eligendi asperiores velit, tempore sint ex.
+            Veniam deleniti eum quaerat quod laborum hic pariatur beatae unde culpa aliquid.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum distinctio voluptas vitae illo non,
+            magnam accusamus deleniti, voluptates at corrupti aliquid incidunt sequi nobis eligendi totam hic commodi odit.
+            Lorem ipsum dolor
+        </p>
+        <figure>
+            <img class="plaatje" src="./foto's/foto1.jpg" alt="foto met een beeldje van een karakter uit metal gear en de game zelf en nog een paar andere props">
+        </figure>
+        <figure onmouseover="document.getElementById('cursor').style.background-imageurl('img/hamer.png')">
+            <a id="game"></a>
+            <h2>de Game</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Laborum nulla libero nobis, quo doloremque labore totam qui quaerat minima pariatur, 
+            atque saepe sapiente id sit impedit nemo nisi placeat praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quidem, voluptatum incidunt corrupti voluptate ex minima. Sunt tempore necessitatibus hic, 
+            quibusdam, totam ipsa, modi dolor magnam excepturi illum odit? Dignissimos, 
+            magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Qui quidem aperiam vel iure blanditiis autem quasi molestias aspernatur necessitatibus. 
+            Quibusdam blanditiis delectus quas ullam suscipit inventore vel temporibus possimus deserunt.
+            <h1 class="score">SCORE: <span>00</span></h1>
+            <div class="board">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="cursor" id="cursor"></div>
+            <script src="wam.js" defer></script>
+        </figure>
         <h2>reviews</h2>
-    </figure>
-    <figure>
+    </article>
+    <footer>
         <h2>contact en openingstijden</h2>
         <p>telefoon: 06-123456789</p>
         <p>email: voorbeeld@gmail.com</p>
         <p>openingstijden</p>
-        
-    </figure>
-
+    </footer>
 </body>
 </html>
