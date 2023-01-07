@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    
+    background-color: white;
 }
 
 header, footer{
@@ -38,7 +38,7 @@ article{
 }
 
 .rechts{
-
+    background-color: white;
 }
 
 footer{

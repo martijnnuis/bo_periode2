@@ -60,16 +60,26 @@ function update(time) {
         deltaT = time - previousT
     }
     ctx.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
-    if(ship.speed < ship.maxSpeed)ship.speed += inputVector.y * ship.acc;
-    if(ship.speed < 0)ship.speed = 0;
-    if(ship.speed > 0 && inputVector.y == 0) ship.speed-=0.001;
-    ctx.translate(x,y);
+
     ship.rotation += ship.rotSpeed * inputVector.x;
-    x += Math.cos(ship.rotation)*ship.speed*deltaT;
-    y += Math.sin(ship.rotation)*ship.speed*deltaT;
-    ctx.rotate(ship.rotation);
-    draw_ship(0, 0, ship.size, "green")
-    ctx.resetTransform();
+    if(inputVector.y > 0){
+    ship.accVector.x =  delta * Math.cos(ship.rotation)*ship.accelleration;
+            ship.accVector.y =  delta * Math.sin(ship.rotation)*ship.accelleration;
+    }else if(inputVector.y < 0){
+    ship.accVector.x = 0;
+    ship.accVector.y = 0;
+    ship.velVector.x *= 0.98;
+    ship.velVector.y *= 0.98;	
+    }else{
+    ship.accVector.x = 0;
+    ship.accVector.y = 0;
+    }
+    ship.velVector.x += ship.accVector.x;
+    ship.velVector.y += ship.accVector.y;
+    ship.posVector.x += ship.velVector.x;
+    ship.posVector.y += ship.velVector.y;
+
+
     if(x > canvas.width+size) x = -ship.size;  
     if(x < -size) x = canvas.width + ship.size;
     if(y > canvas.height+size) y = -ship.size;
