@@ -45,7 +45,7 @@ nav > ul > li{
     height: 100%;
 }
 
-nav > ul > li > a{
+nav > ul > li > A{
     width: 100%;
     height: 100%;
     display: block;
@@ -87,7 +87,7 @@ footer > H2{
 footer > p{
     display: flex;
     justify-content: center;
-    font-size: 150%;
+    font-size: 100%;
 }
 
 
