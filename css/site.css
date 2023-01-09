@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: white;
+    
 }
 
 header, footer{
@@ -20,6 +20,27 @@ header, footer{
 
 header{
     height: 60px;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+nav > ul > li{
+    width: 100%;
+    height: 100%;
 }
 
 article{
