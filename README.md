@@ -9,3 +9,6 @@ ver.1.2 game staat op de site, site staat online, site is voor een deel ingevuld
 
 ver 1.3:
 de site heeft wat css gekregen en een deel van de html is verbeterd waardoor er geen errors zijn
+
+ver 1.4:
+betere styles en de game staat op de landingspage
