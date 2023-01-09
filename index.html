@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flomar game-museum</title>
     <link rel="stylesheet" href="./css/site.css">
+    <script src="astroids.js" defer></script>
 </head>
 <body>
     <header>
@@ -62,7 +63,7 @@
         <figure>
             <img class="plaatje" src="./foto's/foto1.jpg" alt="foto met een beeldje van een karakter uit metal gear en de game zelf en nog een paar andere props">
         </figure>
-        <figure onmouseover="document.getElementById('cursor').style.background-imageurl('img/hamer.png')">
+        <figure>
             <a id="game"></a>
             <h2>de Game</h2>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -73,20 +74,7 @@
             magni? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Qui quidem aperiam vel iure blanditiis autem quasi molestias aspernatur necessitatibus. 
             Quibusdam blanditiis delectus quas ullam suscipit inventore vel temporibus possimus deserunt.
-            <h1 class="score">SCORE: <span>00</span></h1>
-            <div class="board">
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-                <div class="hole"></div>
-            </div>
-            <div class="cursor" id="cursor"></div>
-            <script src="wam.js" defer></script>
+            <canvas id="gameCanvas" width="1000" height="500"></canvas>
         </figure>
         <h2>reviews</h2>
     </article>
