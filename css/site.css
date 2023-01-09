@@ -37,7 +37,6 @@ nav > ul{
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
-    gap: 20px;
 }
 
 nav > ul > li{
@@ -48,8 +47,10 @@ nav > ul > li{
 nav > ul > li > A{
     width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     line-height: 60px;
     text-decoration: none;
     color: white;
@@ -75,7 +76,7 @@ article{
 }
 
 footer{
-    height: 200px;
+    height: 300px;
 }
 
 footer > H2{
@@ -88,6 +89,11 @@ footer > p{
     display: flex;
     justify-content: center;
     font-size: 100%;
+}
+
+.game {
+    width: 80vw;
+    border: 1px solid white;
 }
 
 

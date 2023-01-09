@@ -106,7 +106,7 @@ function newAsteroid(x, y) {
 
 function update() {
     // draw space
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#15191e";
     ctx.fillRect(0, 0, canv.width, canv.height);
 
     // thrust the ship
