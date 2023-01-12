@@ -12,3 +12,6 @@ de site heeft wat css gekregen en een deel van de html is verbeterd waardoor er 
 
 ver 1.4:
 betere styles en de game staat op de landingspage
+
+ver. 1.4.5:
+game is verbeterd en css is wat aangepast.
