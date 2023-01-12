@@ -60,6 +60,8 @@ article{
     width: 80vw;
     margin: 0 auto;
     padding: 20px;
+    animation-name: up;
+    animation-duration: 0.8s;
 }
 
 .logo{
@@ -106,6 +108,17 @@ footer > p{
     }
     100%{
         transform: translateX(-50%) translateY(0);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes up {
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
         transform: translateY(0px);
         opacity: 1;
     }
