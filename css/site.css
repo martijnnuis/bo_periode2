@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 
+:root{
+    --text__color:white;
+    --background__color: #222831;
+    --header__color:black;
+}
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background:  #222831;
-    color:white;
+    background:  var(--background__color);
+    color: var(--text__color);
 }
 
 header, footer{
-    background: black;
-    color:white;
+    background: var(--header__color);
+    color:var(--text__color);
     display: block;
 }
 
@@ -53,7 +59,7 @@ nav > ul > li > A{
     justify-content: center;
     line-height: 60px;
     text-decoration: none;
-    color: white;
+    color: var(--text__color);
 }
 
 article{
@@ -74,7 +80,7 @@ article{
 }
 
 .rechts{
-    background-color: white;
+    background-color: var(--text__color);
 }
 
 footer{
@@ -95,22 +101,7 @@ footer > p{
 
 .game {
     width: 80vw;
-    border: 1px solid white;
-}
-
-
-
-@keyframes rise {
-    0%{
-        transform: translateX(-50%) translateY(100%);
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(-50%) translateY(0);
-        transform: translateY(0px);
-        opacity: 1;
-    }
+    border: 1px solid var(--text__color);
 }
 
 @keyframes up {
