@@ -63,16 +63,27 @@ nav > ul > li > A{
 }
 
 article{
-    width: 80vw;
+    width: 70vw;
     margin: 0 auto;
-    padding: 20px;
     animation-name: up;
     animation-duration: 0.8s;
+}
+
+h1{
+    padding-top: 30px;
 }
 
 .logo{
     width:1000px;
     height: 500px;
+}
+
+p{
+    padding-top:10px;
+}
+
+h2{
+    padding-top: 40px;
 }
 
 .plaatje{
@@ -84,7 +95,7 @@ article{
 }
 
 footer{
-    height: 300px;
+    height: 420px;
 }
 
 footer > H2{
