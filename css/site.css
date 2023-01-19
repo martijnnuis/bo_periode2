@@ -10,9 +10,9 @@
     --header__color:black;
 }
 
-/*html{
+html{
     scroll-behavior: smooth;
-}*/
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -95,18 +95,32 @@ h2{
 }
 
 footer{
+    width: 100%;
+    margin: 0 auto;
     height: 420px;
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer > section{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer > section > section{
+    margin: 10px;
+    
 }
 
 footer > H2{
+    font-size: 250%;
     display: flex;
     justify-content: center;
-    font-size: 250%;
 }
 
-footer > p{
-    display: flex;
-    justify-content: center;
+footer > section > p{
     font-size: 100%;
 }
 
@@ -114,6 +128,7 @@ footer > p{
     width: 80vw;
     border: 1px solid var(--text__color);
 }
+
 
 @keyframes up {
     0%{

@@ -186,7 +186,7 @@ for (var i = 0; i < komeet.vert; i++) {
 
 function nieuw_spel() {
     niveau = 0;
-    levens = levens;
+    leven = levens;
     punten = 0;
     schip = nieuw_schip();
 
@@ -411,7 +411,7 @@ function update() {
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillStyle = "rgba(255, 255, 255, " + textAlpha + ")";
-        ctx.font = "small-caps " + text_grote + "px dejavu sans mono";
+        ctx.font = "small-caps " + text_grote + "px Arial";
         ctx.fillText(text, canv.width / 2, canv.height * 0.75);
         textAlpha -= (1.0 / text_verdwijn_tijd / FPS);
     } else if (schip.dead) {
@@ -421,8 +421,8 @@ function update() {
 
     
     var lifeColour;
-    for (var i = 0; i < levens; i++) {
-        lifeColour = exploding && i == levens - 1 ? "red" : "white";
+    for (var i = 0; i < leven; i++) {
+        lifeColour = exploding && i == leven - 1 ? "red" : "white";
         teken_schip(schip_grote + i * schip_grote * 1.2, schip_grote, 0.5 * Math.PI, lifeColour);
     }
 
@@ -430,14 +430,14 @@ function update() {
     ctx.textAlign = "right";
     ctx.textBaseline = "middle";
     ctx.fillStyle = "white";
-    ctx.font = text_grote + "px dejavu sans mono";
+    ctx.font = text_grote + "px Arial";
     ctx.fillText(punten, canv.width - schip_grote / 2, schip_grote);
 
     
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillStyle = "white";
-    ctx.font = (text_grote * 0.75) + "px dejavu sans mono";
+    ctx.font = (text_grote * 0.75) + "px Arial";
     ctx.fillText("BEST " + topscore, canv.width / 2, schip_grote);
 
     
@@ -493,8 +493,8 @@ function update() {
 
 
         if (schip.explodeTime == 0) {
-            levens--;
-            if (levens == 0) {
+            leven--;
+            if (leven == 0) {
                 gameOver();
             } else {
                 schip = nieuw_schip();
