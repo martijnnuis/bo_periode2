@@ -10,9 +10,9 @@
     --header__color:black;
 }
 
-/*html{
+html{
     scroll-behavior: smooth;
-}*/
+}
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -82,6 +82,10 @@ p{
     padding-top:10px;
 }
 
+.smaller{
+    width: 800px;
+}
+
 h2{
     padding-top: 40px;
 }
@@ -91,8 +95,22 @@ h2{
 }
 
 .rechts{
-    background-color: var(--text__color);
+    position: absolute;
+    right: 15%;
 }
+
+.rechts__1{
+    top:167%;
+}
+
+.rechts__2{
+    top: 147%;
+}
+
+.rechts__3{
+    top: 127%;
+}
+
 
 footer{
     height: 420px;
