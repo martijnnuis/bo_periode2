@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+figure{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    animation-name: fotoslider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fotoslider {
+    0%{
+        opacity: 0.5;
+        background-image: url(../foto/sfeer1.jpg);
+    }
+    to{
+        opacity: 1;
+        background-image: url(../foto/foto1.jpg);
+    }
+}
