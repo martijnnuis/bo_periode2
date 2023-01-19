@@ -67,6 +67,7 @@ article{
     margin: 0 auto;
     animation-name: up;
     animation-duration: 0.8s;
+    padding-right: 300px;
 }
 
 h1{
@@ -82,35 +83,40 @@ p{
     padding-top:10px;
 }
 
-.smaller{
-    width: 800px;
-}
-
 h2{
     padding-top: 40px;
 }
 
-.plaatje{
-    width: 200px ;   
+.lang{
+    height: 200px;
+    margin-top: 20px;
 }
 
-.rechts{
+.lang > img{
+    object-fit: cover;
+}
+
+.alle_plaatjes{
+    width: 200px ;   
+    height: 200px;
     position: absolute;
     right: 15%;
 }
 
-.rechts__1{
-    top:167%;
+.plaatje{
+    width: 100%;   
+    height: 100%;
 }
 
-.rechts__2{
-    top: 147%;
+.rechts{
+    object-fit: cover;
 }
 
-.rechts__3{
-    top: 127%;
+img {
+    height: 100%;
+    width: 100%;
+    
 }
-
 
 footer{
     width: 100%;
