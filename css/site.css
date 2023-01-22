@@ -123,7 +123,6 @@ img {
 .reviews{
     width: 70vw;
     height: 300px;
-    background: red;
     animation-name: slider;
     animation-duration: 30s;
     animation-iteration-count: infinite;
@@ -203,47 +202,60 @@ footer > section > p{
     /*review 1*/
     0%{
         opacity: 0;
+        background-image: url(../foto/review-1.png);
     }
     12.5%{
         opacity: 1;
+        background-image: url(../foto/review-1.png);
     }
     24%{
         opacity: 0;
+        background-image: url(../foto/review-1.png);
     }
     /*review 2*/
     25%{
         opacity: 0;
+        background-image: url(../foto/review-2.png);
         
     }
     37.5%{
         opacity: 1;
+        background-image: url(../foto/review-2.png);
     }
     49%{
         opacity: 0;
+        background-image: url(../foto/review-2.png);
     }
     /* review 3 */
     50%{
         opacity: 0;
+        background-image: url(../foto/review-3.png);
     }
     67.5%{
         opacity: 1;
+        background-image: url(../foto/review-3.png);
     }
     74%{
         opacity: 0;
+        background-image: url(../foto/review-3.png);
     }
     /* review 4 */
     75%{
         opacity: 0;
+        background-image: url(../foto/review-4.png);
     }
     87.5%{
         opacity: 1;
+        background-image: url(../foto/review-4.png);
     }
     99%{
         opacity: 0;
+        background-image: url(../foto/review-4.png);
     }
     /* loop review 1*/
     100%{
         opacity: 0;
+        background-image: url(../foto/review-1.png);
     }
 
 }
