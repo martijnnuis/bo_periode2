@@ -15,3 +15,9 @@ betere styles en de game staat op de landingspage
 
 ver. 1.4.5:
 game is verbeterd en css is wat aangepast.
+
+ver. 1.4.8:
+plaatjes werken weer.
+
+ver. 1.5:
+foto slider is gemaakt
