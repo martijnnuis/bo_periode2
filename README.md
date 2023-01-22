@@ -18,3 +18,6 @@ game is verbeterd en css is wat aangepast.
 
 ver. 1.4.8:
 plaatjes werken weer.
+
+ver. 1.5:
+foto slider is gemaakt
